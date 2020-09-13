@@ -1,9 +1,9 @@
 <div class="chat-messages">
     <div class="chat-messages-show-container">
-        <ul class="chat-messages-list"></ul>
+        <ul class="chat-messages-list" id="message-list"></ul>
     </div>
     <div class="chat-messages-create-container">
-        <input type="text" class="chat-messages-input">
-        <button type="button" class="chat-messages-button"> send </button>
+        <input type="text" class="chat-messages-input" [(ngModel)]="message">
+        <button type="button" class="chat-messages-button" (click)="sendMessage()"> send </button>
     </div>
 </div>
